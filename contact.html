@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootStrap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Scheduler: Goal Navigator</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="contact-form">
+        <h2>Contact Us Form</h2>
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label>Reason for Contact:</label>
+            <fieldset>
+                <div class = "radio-option">
+                    <input type="radio" id="question" name="reason" value="question" checked>
+                    <label for="question">Question</label>
+                </div>
+                
+                <div class = "radio-option">
+                    <input type="radio" id="feedback" name="reason" value="feedback">
+                    <label for="feedback">Feedback</label>
+                </div>
+                <div class = "radio-option">
+                <input type="radio" id="support" name="reason" value="support">
+                <label for="support">Support</label>
+                </div>
+            </fieldset>
+            
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+</html>
